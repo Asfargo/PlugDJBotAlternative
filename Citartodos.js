@@ -1,12 +1,13 @@
 API.on(API.CHAT, chat);
+API.chatLog("Iniciar #03");
 function chat(data) {
         
         var waitlist = API.getWaitList();
-        if(data.message.indexOf("!X") > -1)
+        if(data.message.indexOf("Iniciar #03") > -1)
         {
             API.chatLog(" ", false);
             API.chatLog("Automated message Waitlist! ", false);
-            API.chatLog("!X (se o flood for infinito o primeiro X devera ser igual ao segundo)@" + API.getDJ().username, false);
+            API.chatLog("@" + API.getDJ().username, false);
 
 
             {
@@ -37,14 +38,15 @@ function chat(data) {
         }
         
 API.on(API.CHAT, chat);
+API.chatLog("Iniciar #05");
 function chat(data) {
         
         var waitlist = API.getUsers();
-        if(data.message.indexOf("!X") > -1)
+        if(data.message.indexOf("Iniciar #05") > -1)
         {
             API.chatLog(" ", false);
-            API.chatLog("Automated message Waitlist! ", false);
-            API.chatLog("!X (se o flood for infinito o primeiro X devera ser igual ao segundo)@" + API.getDJ().username, false);
+            API.chatLog("Automated message Userlist!", false);
+            API.chatLog("Para flood nao retire o Iniciar #05 daqui. + API.getDJ().username, false);
 
 
             {
