@@ -4,8 +4,6 @@ function chat(data) {
         var waitlist = API.getWaitList();
         if(data.message.indexOf("Iniciar05") > -1)
         {
-            API.chatLog(" ", false);
-            API.chatLog("Automated message Waitlist! ", false);
             API.chatLog("Iniciar0X (X = 5 se for flood) @" + API.getDJ().username, false);
 
 
@@ -13,7 +11,7 @@ function chat(data) {
                 API.sendChat("Hello @" + waitlist[0].username + " @" + waitlist[1].username + " @" + waitlist[2].username + " @" + waitlist[3].username + " @" + waitlist[4].username + " @" + waitlist[5].username + " @" + waitlist[6].username + " @" + waitlist[7].username + " @" + waitlist[8].username + " @" + waitlist[9].username + " @" + waitlist[10].username + " @" + waitlist[11].username + " @" + waitlist[12].username + " @" + waitlist[13].username + " @" + waitlist[14].username + " @" + waitlist[15].username + " @" + waitlist[16].username + " @" + waitlist[17].username + " @" + waitlist[18].username + " @" + waitlist[19].username + " @" + waitlist[20].username + " @" + waitlist[21].username, false);
             }
 
-            API.chatLog(" ", false);
+            API.chatLog("", false);
         }
         }
         API.chatLog("Iniciar05");
@@ -44,16 +42,14 @@ function chat(data) {
         var waitlist = API.getUsers();
         if(data.message.indexOf("Iniciar03") > -1)
         {
-            API.chatLog(" ", false);
-            API.chatLog("Automated message Waitlist! ", false);
-            API.chatLog("Iniciar03 " + API.getDJ().username, false);
+            API.chatLog("Iniciar0X (Se for flood X = 3) " + API.getDJ().username, false);
 
 
             {
                 API.sendChat("Hello @" + waitlist[0].username + " @" + waitlist[1].username + " @" + waitlist[2].username + " @" + waitlist[3].username + " @" + waitlist[4].username + " @" + waitlist[5].username + " @" + waitlist[6].username + " @" + waitlist[7].username + " @" + waitlist[8].username + " @" + waitlist[9].username + " @" + waitlist[10].username + " @" + waitlist[11].username + " @" + waitlist[12].username + " @" + waitlist[13].username + " @" + waitlist[14].username + " @" + waitlist[15].username + " @" + waitlist[16].username + " @" + waitlist[17].username + " @" + waitlist[18].username + " @" + waitlist[19].username + " @" + waitlist[20].username + " @" + waitlist[21].username, false);
             }
 
-            API.chatLog(" ", false);
+            API.chatLog("", false);
         }
         }
         API.chatLog("Iniciar03");
