@@ -2,7 +2,7 @@ API.on(API.CHAT, chat);
 function chat(data) {
         
         var waitlist = API.getWaitList();
-        if(data.message.indexOf("0151") > -1)
+        if(data.message.indexOf("!") > -1)
         {
             API.chatLog(" ", false);
             API.chatLog("Automated message Waitlist! ", false);
