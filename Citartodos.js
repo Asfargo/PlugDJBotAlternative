@@ -7,12 +7,13 @@ API.on(API.CHAT, chat);
 function chat(data) {
 var users = API.getUsers(), chat = '';
 chat += "Hello ";
-if(data.message.indexOf("XXXXX") > -1)
+if(data.message.indexOf("Iniciar07") > -1)
         {
-API.chatLog("Hi @" + API.getDJ().username, false);
+API.chatLog("Iniciar0X (X = 7 se for flood) @" + API.getDJ().username, false);
 for (var i = 0; i < users.length; i++) { chat += " @" + users[i].username; } API.sendChat(chat);
 }
 }
+      API.chatLog("Iniciar07");
 
 
 
