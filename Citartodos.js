@@ -36,3 +36,22 @@ function chat(data) {
         }
         }
         
+API.on(API.CHAT, chat);
+function chat(data) {
+        
+        var waitlist = API.getWaitList();
+        if(data.message.indexOf("0151") > -1)
+        {
+            API.chatLog(" ", false);
+            API.chatLog("Automated message: Waitlist: ", false);
+            API.chatLog("Hi @" + API.getDJ().username, false);
+
+
+            {
+                API.chatLog("Automated message: @" + waitlist[1].username, false);
+            }
+
+            API.chatLog(" ", false);
+        }
+        }
+        
