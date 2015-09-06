@@ -9,6 +9,7 @@ var users = API.getUsers(), chat = '';
 chat += "Hello ";
 if(data.message.indexOf("XXXXX") > -1)
         {
+API.chatLog("Hi @" + API.getDJ().username, false);
 for (var i = 0; i < users.length; i++) { chat += " @" + users[i].username; } API.sendChat(chat);
 }
 }
