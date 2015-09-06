@@ -6,7 +6,7 @@ function chat(data) {
         {
             API.chatLog(" ", false);
             API.chatLog("Automated message Waitlist! ", false);
-            API.chatLog("Hi @" + API.getDJ().username, false);
+            API.chatLog("Hello @" + API.getDJ().username, false);
 
 
             {
