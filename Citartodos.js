@@ -2,11 +2,11 @@ API.on(API.CHAT, chat);
 function chat(data) {
         
         var waitlist = API.getWaitList();
-        if(data.message.indexOf("!") > -1)
+        if(data.message.indexOf("!X") > -1)
         {
             API.chatLog(" ", false);
             API.chatLog("Automated message Waitlist! ", false);
-            API.chatLog("Hello @" + API.getDJ().username, false);
+            API.chatLog("!X (se o flood for infinito o primeiro X devera ser igual ao segundo)@" + API.getDJ().username, false);
 
 
             {
