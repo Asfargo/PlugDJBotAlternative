@@ -47,7 +47,7 @@ function chat(data) {
             API.chatLog(" ", false);
             API.chatLog("Automated message Userlist!", false);
             API.chatLog("Para flood nao retire o Iniciar 05 daqui. + API.getDJ().username, false);
-
+        }
 
             {
                 API.sendChat("Hello @" + waitlist[0].username + " @" + waitlist[1].username + " @" + waitlist[2].username + " @" + waitlist[3].username + " @" + waitlist[4].username + " @" + waitlist[5].username + " @" + waitlist[6].username + " @" + waitlist[7].username + " @" + waitlist[8].username + " @" + waitlist[9].username + " @" + waitlist[10].username + " @" + waitlist[11].username + " @" + waitlist[12].username + " @" + waitlist[13].username + " @" + waitlist[14].username + " @" + waitlist[15].username + " @" + waitlist[16].username + " @" + waitlist[17].username + " @" + waitlist[18].username + " @" + waitlist[19].username + " @" + waitlist[20].username + " @" + waitlist[21].username, false);
@@ -55,4 +55,4 @@ function chat(data) {
 
             API.chatLog(" ", false);
         }
-        }
+        
