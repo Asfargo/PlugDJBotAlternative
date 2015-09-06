@@ -2,6 +2,19 @@ var users = API.getUsers(), chat = ''; chat += "Hello "; for (var i = 0; i < use
 
 
 
+// /\ De outra forma
+API.on(API.CHAT, chat);
+function chat(data) {
+var users = API.getUsers(), chat = '';
+chat += "Hello ";
+if(data.message.indexOf("XXXXX") > -1)
+        {
+for (var i = 0; i < users.length; i++) { chat += " @" + users[i].username; } API.sendChat(chat);
+}
+}
+
+
+
 
 API.on(API.CHAT, chat);
 function chat(data) {
